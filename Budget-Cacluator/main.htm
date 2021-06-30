@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget calculator</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="myStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"  ></script>
+    
+</head>
+<body>
+    <div class="container col-8">
+        <div class="header">
+            <h2>Budget calculator</h2>
+        </div>
+        <div id="content" class="form" >
+            <div><h2 align="center">Input Screen</h2></div>
+            
+            <div class="main col-12 ">
+                
+                
+                    <label for="Monthly Income">Monthly Income<span style="color: red;">*</span></label>
+                <label for="date" >Budget-Ending-date</label><br>
+                <input type="number" name="income" id="income" placeholder="Input your Monthly Income" required/>
+                
+                <input type="date" name="date" id="date" />
+                <button id="submit"  onclick="submit()">Submit</button>
+            
+                
+            
+            </div>
+        </div>
+        <div class="main-content" style="display: none;">
+            <div><h2 align="center">Main Screen</h2></div>
+            <div>
+                <table class="table col-12 bg-light">
+                    <tr><th>Budget</th><td id="budget"></td><th>Balance</th><td id="balance"></td></tr>
+                    <tr><th>Expenses</th><td id="expenses">0</td><th>Savings</th><td id="savings"></td></tr>
+                </table>
+                <div id="budget-content">
+                    <label for="new budget">New Budget</label><br>
+                    <input type="number" id="newBudget" name="newBudget" placeholder="increase or decrease budget here ">
+                    <button id="newsubmit" >Submit</button>
+                    
+                </div><br>
+                <div class="expenses-content">
+                    <h2 >Expenses</h2>
+                    <label for="budget description">Budget Description</label>
+                    <label for="catagory">Catagory</label><br>
+                    <input type="text" name="budget-description" id="budget-description" placeholder="example:EMI" required>
+                    <select name="category" id="category">
+                        <option value=""></option>
+                        <option value="EMI">EMI</option>
+                        <option value="Rent">Rent</option>
+                        <option value="Internet">Internet</option>
+                        <option value="Groceries">groceries</option>
+                        <option value="Electricity">Electricity</option>
+                        <option value="Insurance">Insurance</option>
+                        <option value="Other bills">Other bills</option>
+
+                    </select><br>
+                    <label for="Amount">Amount</label>
+                    <label for="date" >date</label><br>
+                    <input type="number" name="Amount" id="amount" placeholder="Enter Amount based on your category" required>
+                
+                    <input type="date" name="curdate" id="curdate" required>
+                    <button id="add-expenses" >Add expenses</button>
+                    <button id="toggledisplay" >Display/hide Table</button>
+
+                    
+
+                </div>
+                <div class=display>
+                    <button id="clearall" >Clear all</button> 
+                    <div>
+                        <table class="table col-12">
+                            <tr><th>budget Description</th><th>category</th><th>Amount</th><th>Date</th></tr>
+                            <tbody id="tbody">
+                                
+                                
+                            </tbody>
+                        </table>
+    
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+   <script src="myScript.js"></script> 
+</body>
+</html>

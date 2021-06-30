@@ -1,0 +1,79 @@
+*{
+    margin-left: 0px;
+    padding: 0px;
+}
+.header{
+    background-color: green;
+    margin-bottom: 20px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+}
+
+.main{
+    float: left;
+    margin: 20px;
+    
+}
+.main label,.main input{
+    width: 48%;
+    
+}
+#submit{
+    background-color: green;
+    width: 100px;
+    align-items: center;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   position: relative;
+   left:42%;
+   color: white;
+   border-radius: 100px;
+}
+#newsubmit{
+    border-radius: 100px;
+    width: 100px;
+    background-color: green;
+    color: white;
+    margin-left: 5px;
+}
+#budget-content input  {
+width: 60%;
+}
+.expenses-content input,.expenses-content label,.expenses-content select{
+    width: 49%;
+    margin-left: 5px;
+}
+.expenses-content button{
+    background-color: green;
+    width: 150px;
+    align-items: center;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   position: relative;
+   left:42%;
+   color: white;
+   border-radius: 100px;
+}
+table{
+    overflow: auto;
+}
+table .delete1{
+    background-color:green;
+    border-radius: 50px;
+    width: 100px;
+    color: white;
+   
+}
+.display #clearall{
+    background-color:green;
+    border-radius: 50px;
+    width: 100px;
+    color: white;
+   
+}
